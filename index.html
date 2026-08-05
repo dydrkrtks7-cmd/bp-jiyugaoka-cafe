@@ -1,620 +1,367 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>목동 마사지 추천 가이드 — 처음 방문자를 위한 조건별 선택 안내</title>
-<meta name="description" content="목동과 인접 지역의 마사지 선택 기준을 지역별 이용 흐름과 이동 시간을 고려해 안내합니다. 급하게 결정해야 할 때 조건별로 비교해보세요.">
-<meta name="keywords" content="목동 마사지, 마사지 추천, 양천구 마사지, 목동역 마사지, 오목교 마사지, 지역별 마사지">
-<link rel="canonical" href="https://mokdong-massage-note.korinfo.shop/">
-<meta name="bpaas-design-system" content="brutalist-avantgarde">
-<meta name="bpaas-design-theme" content="kr-night-teal">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiyugaoka Cafe 안내 | 진짜 '그곳'의 커피 경험을 맛보세요! ☕️</title>
+    <meta name="description" content="지유가오카(Jiyugaoka)에서 최고의 카페를 찾으시나요? 저희는 단순한 공간이 아닌, 하나의 철학을 제공합니다. Jiyugaoka cafe 안내의 모든 것을 이 페이지에 담았으니, 스크롤 압박은 감수하셔야 할 겁니다! 😉">
+    <meta name="keywords" content="Jiyugaoka cafe, 지유가오카 카페, 맛집 추천, 커피 전문점, 일본 카페, Jiyugaoka 정보, 분위기 좋은 카페">
+    <link rel="canonical" href="https://mokdong-massage-note.korinfo.shop/">
 
-<!-- OG / Twitter -->
-<meta property="og:title" content="목동 마사지 추천 가이드 — 조건별 선택 기준과 지역 비교">
-<meta property="og:description" content="목동과 인접 지역의 마사지 선택 기준을 지역별 이용 흐름과 이동 시간을 고려해 안내합니다.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://mokdong-massage-note.korinfo.shop/">
-<meta property="og:locale" content="ko_KR">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="목동 마사지 추천 가이드 — 조건별 선택 기준과 지역 비교">
-<meta name="twitter:description" content="목동과 인접 지역의 마사지 선택 기준을 지역별 이용 흐름과 이동 시간을 고려해 안내합니다.">
+    <!-- 필수 메타 태그 -->
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    
+    <!-- OG 및 Twitter Card 설정 -->
+    <meta property="og:title" content="Jiyugaoka Cafe 안내 | 진짜 '그곳'의 커피 경험을 맛보세요! ☕️">
+    <meta property="og:description" content="지유가오카(Jiyugaoka)에서 최고의 카페를 찾으시나요? 저희는 단순한 공간이 아닌, 하나의 철학을 제공합니다. Jiyugaoka cafe 안내의 모든 것을 이 페이지에 담았으니, 스크롤 압박은 감수하셔야 할 겁니다! 😉">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mokdong-massage-note.korinfo.shop/">
+    <meta property="og:image" content="og-image.svg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@YourCafeHandle">
+    <meta name="twitter:title" content="Jiyugaoka Cafe 안내 | 진짜 '그곳'의 커피 경험을 맛보세요! ☕️">
+    <meta name="twitter:description" content="지유가오카(Jiyugaoka)에서 최고의 카페를 찾으시나요? 저희는 단순한 공간이 아닌, 하나의 철학을 제공합니다. Jiyugaoka cafe 안내의 모든 것을 이 페이지에 담았으니, 스크롤 압박은 감수하셔야 할 겁니다! 😉">
+    <meta name="twitter:image" content="og-image.svg">
 
-<style>
-/* ===== GLOBAL RESET & BASE ===== */
-*, *::before, *::after { box-sizing: border-box; }
-html { font-size: 16px; scroll-behavior: smooth; }
-body {
-  margin: 0; padding: 0;
-  background-color: #080f0f;
-  background-image: 
-    repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(240,245,245,0.04) 1px, rgba(240,245,245,0.04) 40px),
-    repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(240,245,245,0.04) 1px, rgba(240,245,245,0.04) 40px);
-  color: #f0f5f5;
-  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  line-height: 1.6;
-  min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-}
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Jiyugaoka Cafe (지유가오키 카페)",
+      "description": "지유가오카 지역에서 가장 깊이 있고 철학적인 커피 경험을 선사하는 공간입니다. 단순한 휴식처를 넘어, 삶의 '순간'을 디자인합니다.",
+      "image": "[여기에_임시_이미지_URL]", 
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jiyugaoka",
+        "addressCountry": "JP"
+      },
+      "telephone": null, 
+      "url": "[여기에_실제_도메인]/",
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": "[여기에_실제_도메인]/search?q={search_term_string}",
+          "name": "사이트 내 검색"
+        }
+      ]
+    }
+    </script>
 
-/* ===== TYPOGRAPHY ===== */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Barlow Condensed', 'Impact', 'Arial Black', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -0.02em;
-  font-weight: 700;
-  line-height: 1.1;
-  margin: 0 0 0.5rem 0;
-}
-h1 { font-size: clamp(3rem, 12vw, 7rem); letter-spacing: -0.04em; }
-h2 { font-size: clamp(2rem, 5vw, 3.5rem); border-bottom: 3px solid #00c8a0; display: inline-block; padding-bottom: 4px; margin-bottom: 1rem; }
-h3 { font-size: 1.75rem; }
-p { margin: 0 0 1rem 0; max-width: 70ch; }
-a { color: #00c8a0; text-decoration: underline; text-underline-offset: 3px; }
-a:hover { color: #f0f5f5; }
+    <style>
+        /* ============================================== */
+        /* CSS DNA: Swiss Minimal / Mono-Chrome Theme */
+        /* ============================================== */
+        :root {
+            --color-primary: #111111; /* 배경/주요 텍스트 */
+            --color-secondary: #ffffff; /* 기본 배경/콘텐츠 배경 */
+            --color-accent: #2563eb; /* 강조색 (파란색) */
+            --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
 
-/* ===== UTILITY ===== */
-.n-item-4cqe { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
-.r-btn-lsw4-gap { margin-bottom: 12px; }
-.x-head-34ja-top { border-top: 4px solid #f0f5f5; }
-.x-head-34ja-teal { border-top: 4px solid #00c8a0; }
-.n-body-yl29-right { transform: rotate(0.8deg); }
-.n-body-yl29-left { transform: rotate(-0.6deg); }
-.m-nav-vfdc { background: #00c8a0; color: #080f0f; padding: 0 6px; font-weight: 700; display: inline-block; }
+        /* Base Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* ===== SECTIONS ===== */
-.section-random-dark, .section-random-light {
-  padding: 72px 0;
-  position: relative;
-}
-.section-random-dark {
-  background: #080f0f;
-  color: #f0f5f5;
-}
-.section-random-light {
-  background: #f0f5f5;
-  color: #080f0f;
-}
-.section-random-light h2 { border-bottom-color: #080f0f; }
-.section-random-light .m-nav-vfdc { background: #080f0f; color: #00c8a0; }
+        html {
+            scroll-behavior: smooth;
+        }
 
-/* ===== ROUTE BADGE ===== */
-.r-top-c6ae-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 2px solid #00c8a0;
-  padding: 4px 12px 4px 8px;
-  font-family: 'Barlow Condensed', 'Impact', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-  background: #080f0f;
-  color: #00c8a0;
-  margin-bottom: 1rem;
-}
-.r-top-c6ae-badge .badge-square {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: #00c8a0;
-}
-.section-random-light .r-top-c6ae-badge {
-  background: #f0f5f5;
-  color: #080f0f;
-  border-color: #080f0f;
-}
-.section-random-light .r-top-c6ae-badge .badge-square {
-  background: #080f0f;
-}
+        body {
+            font-family: var(--font-family);
+            color: var(--color-primary);
+            background-color: var(--color-secondary);
+            line-height: 1.7;
+        }
 
-/* ===== GRID ASYMMETRIC ===== */
-.v-hero-78ht-2fr1fr {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 48px;
-  align-items: start;
-}
-.v-hero-78ht-1fr3fr {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 48px;
-  align-items: start;
-}
-.v-hero-78ht-card-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
+        /* Layout & Spacing (Dense) */
+        .container {
+            max-width: 960px; /* Container Width */
+            margin: 0 auto;
+            padding: 0 24px; /* Padding around the edges */
+        }
 
-/* ===== CARD ===== */
-.v-hero-s3kf {
-  border: 3px solid currentColor;
-  border-radius: 4px;
-  padding: 20px;
-  background: transparent;
-  box-shadow: none;
-  transition: border-color 0.2s;
-}
-.section-random-dark .v-hero-s3kf { border-color: #f0f5f5; }
-.section-random-light .v-hero-s3kf { border-color: #080f0f; }
-.v-hero-s3kf:hover { border-color: #00c8a0; }
+        section {
+            padding: 40px 0; /* Section Gap (Vertical Padding) */
+        }
 
-/* ===== TIMELINE ===== */
-.m-list-5jfl {
-  position: relative;
-  padding-left: 32px;
-  border-left: 3px solid #00c8a0;
-  margin: 24px 0;
-}
-.m-list-5jfl-item {
-  position: relative;
-  margin-bottom: 36px;
-  padding-left: 16px;
-}
-.m-list-5jfl-item::before {
-  content: '';
-  position: absolute;
-  left: -32px;
-  top: 6px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #080f0f;
-  border: 3px solid #00c8a0;
-  transform: translateX(-50%);
-}
-.section-random-light .m-list-5jfl-item::before {
-  background: #f0f5f5;
-}
-.m-list-5jfl-item h3 { margin-bottom: 4px; font-size: 1.25rem; }
-.m-list-5jfl-item p { margin: 0; font-size: 0.95rem; }
+        /* Headings */
+        h1, h2, h3 {
+            font-weight: 700; /* Bold/Edgy Voice */
+            line-height: 1.25;
+            margin-bottom: 16px; /* Spacing below headings */
+            color: var(--color-primary);
+        }
 
-/* ===== TABLE STYLE ===== */
-.x-top-9n2g {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95rem;
-}
-.x-top-9n2g th, .x-top-9n2g td {
-  padding: 12px 8px;
-  text-align: left;
-  border-bottom: 1px solid rgba(0,200,160,0.3);
-}
-.section-random-light .x-top-9n2g th, 
-.section-random-light .x-top-9n2g td {
-  border-bottom-color: rgba(8,15,15,0.3);
-}
-.x-top-9n2g th {
-  font-family: 'Barlow Condensed', 'Impact', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  color: #00c8a0;
-}
-.section-random-light .x-top-9n2g th { color: #080f0f; }
+        h1 { font-size: 3rem; }
+        h2 { font-size: 2rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px;}
+        h3 { font-size: 1.35rem; margin-top: 0; }
 
-/* ===== FLOATING DOT NAV ===== */
-.m-body-0h9q-nav {
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  z-index: 999;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.m-body-0h9q-nav li a {
-  display: block;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #f0f5f5;
-  border: 2px solid #00c8a0;
-  transition: all 0.2s;
-  text-indent: -999px;
-  overflow: hidden;
-}
-.m-body-0h9q-nav li a:hover,
-.m-body-0h9q-nav li a.active {
-  background: #00c8a0;
-  border-color: #f0f5f5;
-}
+        /* Navigation & Header */
+        header {
+            border-bottom: 2px solid var(--color-primary); /* Strong line division */
+            padding: 24px 0;
+            position: sticky;
+            top: 0;
+            background: var(--color-secondary);
+            z-index: 1000;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05); /* Subtle shadow */
+        }
 
-/* ===== FAQ ===== */
-.n-side-zmbj-grid {
-  display: grid;
-  gap: 24px;
-}
-.n-side-zmbj-item {
-  border: 2px solid currentColor;
-  border-radius: 4px;
-  padding: 16px 20px;
-}
-.n-side-zmbj-item h3 {
-  font-size: 1.1rem;
-  margin-bottom: 8px;
-  text-transform: none;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 700;
-}
-.n-side-zmbj-item p { margin: 0; }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-/* ===== AUTHOR BIO ===== */
-.x-box-ecss {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  padding: 20px 24px;
-  border: 3px solid currentColor;
-  border-radius: 4px;
-}
-.x-box-ecss-avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: #00c8a0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #080f0f;
-  flex-shrink: 0;
-}
-.x-box-ecss-info p { margin: 0; }
-.x-box-ecss-name { font-weight: 700; font-size: 1.1rem; }
+        .logo a {
+            font-size: 1.6rem;
+            font-weight: 900; /* Extra bold for impact */
+            text-decoration: none;
+            color: var(--color-primary);
+        }
 
-/* ===== MOBILE HEADER (hamburger) ===== */
-.t-list-5c0t-header {
-  display: none;
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 1000;
-  background: #080f0f;
-  border-bottom: 3px solid #00c8a0;
-  padding: 10px 16px;
-  align-items: center;
-  justify-content: space-between;
-}
-.t-list-5c0t-header .menu-toggle {
-  background: none;
-  border: 2px solid #00c8a0;
-  color: #00c8a0;
-  font-size: 1.5rem;
-  padding: 4px 10px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-}
-.t-list-5c0t-header .menu-toggle:focus { outline: 2px solid #f0f5f5; }
-.t-list-5c0t-nav {
-  display: none;
-  position: fixed;
-  top: 56px; left: 0; right: 0;
-  background: #080f0f;
-  border-bottom: 3px solid #00c8a0;
-  padding: 16px;
-  z-index: 999;
-}
-.t-list-5c0t-nav.open { display: block; }
-.t-list-5c0t-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.t-list-5c0t-nav a {
-  font-family: 'Barlow Condensed', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #f0f5f5;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0,200,160,0.4);
-  padding-bottom: 4px;
-}
-.t-list-5c0t-nav a:hover { color: #00c8a0; }
+        .nav-links ul {
+            list-style: none;
+            display: flex;
+            gap: 24px; /* Space between links */
+        }
 
-/* ===== FOOTER ===== */
-footer {
-  padding: 32px 0 80px;
-  text-align: center;
-  border-top: 3px solid #00c8a0;
-  font-size: 0.85rem;
-  background: #080f0f;
-}
-footer p { margin: 4px 0; max-width: none; }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-primary);
+            font-weight: 600;
+            transition: color 0.2s ease, border-bottom 0.2s ease;
+            padding-bottom: 4px;
+        }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  body { padding-top: 60px; }
-  .t-list-5c0t-header { display: flex; }
-  .m-body-0h9q-nav { display: none; }
-  .v-hero-78ht-2fr1fr,
-  .v-hero-78ht-1fr3fr,
-  .v-hero-78ht-card-3 {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-  .section-random-dark, .section-random-light { padding: 48px 0; }
-  .n-item-4cqe { padding: 0 16px; }
-  h1 { font-size: clamp(2.2rem, 10vw, 4rem); }
-  h2 { font-size: 1.8rem; }
-  .m-list-5jfl { padding-left: 24px; }
-  .m-list-5jfl-item::before { left: -24px; width: 12px; height: 12px; }
-  .x-box-ecss { flex-direction: column; text-align: center; }
-  .r-top-c6ae-badge { font-size: 0.75rem; }
-}
+        /* Sticky Nav Hover Effect */
+        .nav-links a:hover {
+            color: var(--color-accent);
+            border-bottom: 1px solid var(--color-accent);
+        }
 
-/* ===== BRUTALIST TWEAKS ===== */
-.m-img-h7xi-border {
-  border: 3px solid #00c8a0;
-  transform: rotate(-0.3deg);
-  margin: 2px 0 0 2px;
-}
-.section-random-light .m-img-h7xi-border {
-  border-color: #080f0f;
-}
-.r-ico-vl8q-stroke {
-  -webkit-text-stroke: 1px #00c8a0;
-  text-stroke: 1px #00c8a0;
-  color: #080f0f;
-}
-.section-random-light .r-ico-vl8q-stroke {
-  -webkit-text-stroke: 1px #080f0f;
-  text-stroke: 1px #080f0f;
-  color: #f0f5f5;
-}
+        /* Hamburger Menu (Mobile) */
+        .hamburger {
+            display: none; /* Hidden by default on desktop */
+            font-size: 28px;
+            cursor: pointer;
+            line-height: 1;
+        }
 
-/* ===== DOM NOISE (hidden) ===== */
-.m-head-w6qd-marker { display: none; }
-</style>
 
-<!-- Google Fonts (외부 의존성이지만 디자인 시스템 폰트 사용을 위해 포함) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;1,700&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+        /* ============================================== */
+        /* Hero Section Styling */
+        /* ============================================== */
+        #hero {
+            padding: 100px 0; /* Generous vertical padding for impact */
+            text-align: center;
+            border-bottom: 3px solid var(--color-accent); /* More prominent division */
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 12px;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 32px auto;
+            color: #444444; /* Slightly softer text color */
+        }
+
+        /* CSS Image Replacement (Abstract Coffee Bean/Steam SVG) */
+        .hero-visual {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 32px auto;
+            background: radial-gradient(circle, #ccc 5%, var(--color-primary) 95%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Simple SVG for visual flair inside the circle */
+        .hero-visual svg {
+            width: 70px;
+            height: 70px;
+            fill: #ffffff; /* White coffee bean color */
+            stroke: var(--color-accent);
+            stroke-width: 2;
+        }
+
+
+        /* ============================================== */
+        /* Grid & Cards (UGC Reviews) */
+        /* ============================================== */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive Grid - 3+ columns */
+            gap: 16px; /* Dense spacing requirement */
+            margin-top: 40px;
+        }
+
+        .review-card {
+            border: 1px solid #e0e0e0; /* Thin border */
+            padding: 24px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #f9f9f9;
+        }
+
+        /* Subtle Hover Transition */
+        .review-card:hover {
+            transform: translateY(-5px); /* Slight lift */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Very subtle shadow increase */
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .nickname {
+            font-weight: 700;
+            color: var(--color-accent);
+            font-size: 1.1rem;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: #777777;
+        }
+
+        .rating span {
+            font-size: 1.2rem;
+            margin-right: 4px;
+            /* ★ 대체 - SVG 또는 문자 사용 */
+        }
+        .rating .star-filled { color: gold; }
+
+
+        /* ============================================== */
+        /* Info & CTA Section */
+        /* ============================================== */
+        #info-cta {
+            text-align: center;
+        }
+
+        .info-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 32px;
+            margin-top: 32px;
+            padding: 24px;
+            border: 1px solid #e0e0e0; /* Border around info block */
+        }
+
+        .info-item {
+            flex: 1;
+            text-align: center;
+            padding: 16px;
+            /* Visual separation via border or whitespace, sticking to clean lines! */
+        }
+
+        .info-item h3 {
+            color: var(--color-accent);
+            margin-bottom: 8px;
+        }
+
+        .info-item p {
+            font-size: 1rem;
+        }
+
+        /* CTA Button (Provocative Tone) */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: var(--color-secondary);
+            text-decoration: none;
+            padding: 14px 36px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 24px;
+            border: 2px solid var(--color-accent);
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        /* CTA Hover Effect */
+        .cta-button:hover {
+            background-color: #1e5acb; /* Slightly darker blue for hover */
+            color: var(--color-secondary);
+        }
+
+
+        /* ============================================== */
+        /* Footer Styling */
+        /* ============================================== */
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            border-top: 1px solid #e0e0e0; /* Clean separation from content */
+            font-size: 0.85rem;
+            color: #666666;
+        }
+
+        /* ============================================== */
+        /* Responsive Design (Mobile Optimization) */
+        /* ============================================== */
+        @media (max-width: 768px) {
+            /* Header/Nav adjustments */
+            .nav-links {
+                display: none; /* Hide links by default on mobile */
+                flex-direction: column;
+                position: absolute;
+                top: 100%; /* Right below the header bar */
+                left: 0;
+                right: 0;
+                background: var(--color-secondary);
+                border-top: 1px solid #e0e0e0;
+                padding: 24px;
+            }
+            .nav-links.active {
+                display: flex; /* Show when active */
+            }
+            .hamburger {
+                display: block; /* Show hamburger icon */
+            }
+
+            /* Hero adjustments */
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            /* Info Grid adjustment */
+            .info-grid {
+                flex-direction: column; /* Stack items vertically */
+                gap: 24px;
+            }
+        }
+    </style>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
 
-<!-- MOBILE HEADER (햄버거 메뉴) -->
-<header class="t-list-5c0t-header">
-  <span style="font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; font-weight:700; color:#00c8a0; letter-spacing:0.05em;">MOKDONG MA</span>
-  <button class="menu-toggle" aria-label="메뉴 열기" onclick="document.querySelector('.t-list-5c0t-nav').classList.toggle('open')">☰</button>
-</header>
-<nav class="t-list-5c0t-nav" aria-label="모바일 네비게이션">
-  <ul>
-    <li><a href="#top" onclick="document.querySelector('.t-list-5c0t-nav').classList.remove('open')">가이드</a></li>
-    <li><a href="#branch" onclick="document.querySelector('.t-list-5c0t-nav').classList.remove('open')">선택 분기점</a></li>
-    <li><a href="#flow" onclick="document.querySelector('.t-list-5c0t-nav').classList.remove('open')">이용 흐름</a></li>
-    <li><a href="#condition" onclick="document.querySelector('.t-list-5c0t-nav').classList.remove('open')">조건별 선택</a></li>
-    <li><a href="#faq" onclick="document.querySelector('.t-list-5c0t-nav').classList.remove('open')">FAQ</a></li>
-    <li><a href="#author" onclick="document.querySelector('.t-list-5c0t-nav').classList.remove('open')">작성자</a></li>
-  </ul>
-</nav>
-
-<!-- FLOATING DOT NAV (데스크탑) -->
-<nav aria-label="섹션 탐색" class="m-body-0h9q-nav">
-  <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
-    <li><a href="#top" aria-label="맨 위로">●</a></li>
-    <li><a href="#branch" aria-label="선택 분기점">●</a></li>
-    <li><a href="#flow" aria-label="이용 흐름">●</a></li>
-    <li><a href="#condition" aria-label="조건별 선택">●</a></li>
-    <li><a href="#faq" aria-label="FAQ">●</a></li>
-    <li><a href="#author" aria-label="작성자">●</a></li>
-  </ul>
-</nav>
-
-<!-- DOM NOISE: hidden semantic markers -->
-<span class="m-head-w6qd-marker" aria-hidden="true" data-marker="r8d3x">●</span>
-<span class="m-head-w6qd-marker" aria-hidden="true" data-marker="k2m7p">●</span>
-<span class="m-head-w6qd-marker" aria-hidden="true" data-marker="v9g1a">●</span>
-
-<!-- CONTENT -->
-
-<!-- TITLE BLOCK / HERO (섹션 0) -->
-<section id="top" class="section-random-dark" style="padding-top:60px;">
-  <div class="n-item-4cqe">
-    <div class="r-top-c6ae-badge"><span class="badge-square"></span> ROUTE MOKDONG · LINE TEAL</div>
-    <h1 style="margin-bottom:0.2rem; max-width:100%;">목동 마사지<br>추천 가이드</h1>
-    <p style="font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; letter-spacing:0.05em; font-size:1.4rem; margin-bottom:2rem; color:#00c8a0;">처음 방문자를 위한 조건별 선택 안내</p>
-    <div style="display:flex; flex-wrap:wrap; gap:16px; border-top:3px solid #00c8a0; padding-top:24px;">
-      <div style="flex:1; min-width:180px;">
-        <p style="font-size:0.9rem; opacity:0.8;"><span class="m-nav-vfdc">STOP 1</span> 오목교역 · 목동 중심</p>
-        <p style="font-size:0.9rem; opacity:0.8;"><span class="m-nav-vfdc">STOP 2</span> 양천구청 · 업무지구</p>
-        <p style="font-size:0.9rem; opacity:0.8;"><span class="m-nav-vfdc">STOP 3</span> 등촌 · 당산 · 인접</p>
-      </div>
-      <div style="flex:1; min-width:180px; border-left:2px solid rgba(0,200,160,0.3); padding-left:16px;">
-        <p style="font-weight:700;">이 페이지의 각도:</p>
-        <p style="font-size:0.9rem;">“모이는 지점에 따라 갈리는 선택, 지역마다 다른 이용 흐름, 이동을 계산에 넣는 방법”</p>
-      </div>
+    <!-- Header & Sticky Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">Jiyugaoka Cafe</a>
+            </div>
+            <nav class="nav-links" id="mainNav">
+                <ul>
+<li>자세한 기술 명세 가이드는 <a href="https://ko.wikipedia.org/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
     </div>
-  </div>
-</section>
-
-<!-- SECTION 1: 선택의 분기점 -->
-<section id="branch" class="section-random-light">
-  <div class="n-item-4cqe">
-    <div class="r-top-c6ae-badge"><span class="badge-square"></span> BRANCH POINT</div>
-    <h2>선택의 분기점 —<br>당신이 서 있는 곳</h2>
-    <div class="v-hero-78ht-2fr1fr">
-      <div>
-        <p>목동은 역세권 범위가 좁다. 오목교역에서 목동역, 양천구청역 세 개 역이 각각 다른 성격을 만든다. 어디에 서 있느냐에 따라 선택이 갈린다.</p>
-        <p><span class="m-nav-vfdc">오목교역</span> 상권 밀집, 24시 접근성 좋음. 단기 방문에 적합.<br>
-        <span class="m-nav-vfdc">목동역</span> 학원가·주거지, 프라이빗 위주. 예약 필요.<br>
-        <span class="m-nav-vfdc">양천구청역</span> 업무·관공서, 낮 시간 선호.</p>
-        <p style="border-left:3px solid #00c8a0; padding-left:12px; margin-top:16px;"><em>인접 지역(신정동, 등촌, 당산)은 접근 시간과 목적에 따라 다른 선택지를 제공한다. 아래 흐름을 보라.</em></p>
-      </div>
-      <div>
-        <table class="x-top-9n2g">
-          <thead><tr><th>지점</th><th>성격</th></tr></thead>
-          <tbody>
-            <tr><td>오목교</td><td>상업 · 24시</td></tr>
-            <tr><td>목동역</td><td>주거 · 프라이빗</td></tr>
-            <tr><td>양천구청</td><td>업무 · 낮 선호</td></tr>
-            <tr><td>신정동</td><td>조용 · 주말</td></tr>
-            <tr><td>등촌/당산</td><td>넓은 공간 · 단체</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 2: 이용 흐름 (타임라인) -->
-<section id="flow" class="section-random-dark">
-  <div class="n-item-4cqe">
-    <div class="r-top-c6ae-badge"><span class="badge-square"></span> FLOW LINE</div>
-    <h2>이용 흐름 —<br>시간과 이동 계산</h2>
-    <div class="v-hero-78ht-1fr3fr">
-      <div>
-        <p>시간대와 요일에 따라 추천 지역이 바뀐다. 이동 시간을 계산하지 않으면 후회한다.</p>
-        <p style="margin-top:12px; font-size:0.9rem; border-left:2px solid #00c8a0; padding-left:12px;"><strong>규칙:</strong> 출퇴근 40분+ / 점심 30분 / 주말 자유</p>
-      </div>
-      <div class="m-list-5jfl">
-        <div class="m-list-5jfl-item">
-          <h3>07:00–09:00 · 출근 전</h3>
-          <p>오목교역 인근 (24시) · 빠른 이용 가능. 양천구청역은 아직 한산.</p>
-        </div>
-        <div class="m-list-5jfl-item">
-          <h3>12:00–14:00 · 점심</h3>
-          <p>양천구청역 업무지구 밀집. 오목교역도 혼잡. 예약 필수.</p>
-        </div>
-        <div class="m-list-5jfl-item">
-          <h3>18:00–20:00 · 퇴근 후</h3>
-          <p>목동역·오목교역 모두 혼잡. 신정동·등촌 이동 고려.</p>
-        </div>
-        <div class="m-list-5jfl-item">
-          <h3>주말</h3>
-          <p>전 지역 여유. 단, 등촌/당산은 단체 예약 많음. 오전 시간 추천.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 3: 조건별 선택 (카드 그리드 + rotate) -->
-<section id="condition" class="section-random-light">
-  <div class="n-item-4cqe">
-    <div class="r-top-c6ae-badge"><span class="badge-square"></span> CONDITIONAL</div>
-    <h2>조건별 선택 —<br>무엇이 먼저인가</h2>
-    <div class="v-hero-78ht-card-3">
-      <!-- 카드 1: rotate right -->
-      <div class="v-hero-s3kf n-body-yl29-right">
-        <h3>혼자 · 빠른 이용</h3>
-        <p>오목교역 인근. 24시 접근, 워크인 가능. 이동 부담 없음.<br><span class="m-nav-vfdc">추천 조건:</span> 30분 내, 예약 없음, 간단 회복.</p>
-      </div>
-      <!-- 카드 2: rotate left -->
-      <div class="v-hero-s3kf n-body-yl29-left">
-        <h3>커플 · 프라이빗</h3>
-        <p>목동역 or 신정동. 예약 필수, 조용한 분위기. 이동 시간 10분 추가.<br><span class="m-nav-vfdc">추천 조건:</span> 60분 이상, 집중 관리.</p>
-      </div>
-      <!-- 카드 3: 회전 없음 -->
-      <div class="v-hero-s3kf" style="transform:rotate(-0.5deg);">
-        <h3>단체 · 특수 목적</h3>
-        <p>등촌/당산. 넓은 공간, 단체 할인. 주말 예약 필수.<br><span class="m-nav-vfdc">추천 조건:</span> 3인 이상, 스포츠 회복.</p>
-      </div>
-    </div>
-    <!-- 추가 카드 2개 (회전) -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:24px;">
-      <div class="v-hero-s3kf m-img-h7xi-border">
-        <h3>야간 · 심야</h3>
-        <p>오목교 유일. 24시 운영 다수. 이동 안전 고려.<br><span class="m-nav-vfdc">조건:</span> 22시 이후, 역세권.</p>
-      </div>
-      <div class="v-hero-s3kf" style="transform:rotate(1.2deg); border-color:#00c8a0;">
-        <h3>재활 · 치료 목적</h3>
-        <p>양천구청·목동역. 전문 테라피 선별. 예약 필수.<br><span class="m-nav-vfdc">조건:</span> 통증 부위 정확히.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 4: FAQ -->
-<section id="faq" class="section-random-dark">
-  <div class="n-item-4cqe">
-    <div class="r-top-c6ae-badge"><span class="badge-square"></span> FAQ</div>
-    <h2>자주 묻는 질문</h2>
-    <div class="n-side-zmbj-grid" style="grid-template-columns:repeat(2,1fr);">
-      <div class="n-side-zmbj-item">
-        <h3>목동에서 마사지 받을 때 교통 편리한 곳은?</h3>
-        <p>오목교역이 단연 최고. 2호선, 버스 환승. 주차는 어려움. 양천구청역은 버스 환승 좋음.</p>
-      </div>
-      <div class="n-side-zmbj-item">
-        <h3>신정동 vs 목동, 어떤 차이가 있나요?</h3>
-        <p>신정동은 한적하고 주말에 여유. 목동은 접근성 좋고 24시 많음. 급하면 목동, 여유 있으면 신정동.</p>
-      </div>
-      <div class="n-side-zmbj-item">
-        <h3>당산이나 등촌까지 갈 가치가 있나요?</h3>
-        <p>단체거나 특수 목적(스포츠 회복)이면 추천. 일반 관리만 원하면 굳이 이동할 필요 없음.</p>
-      </div>
-      <div class="n-side-zmbj-item">
-        <h3>예약 없이 바로 갈 수 있는 곳은?</h3>
-        <p>오목교역 인근에 워크인 가능한 곳이 있음. 단, 주말 저녁은 어려움. 미리 전화 확인 필수.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 5: AUTHOR BIO + DOM NOISE wrapper -->
-<div class="wrapper-8f3a2c1b">
-<section id="author" class="section-random-light" style="padding-bottom:48px;">
-  <div class="n-item-4cqe">
-    <div class="r-top-c6ae-badge"><span class="badge-square"></span> AUTHOR</div>
-    <div class="x-box-ecss">
-      <div class="x-box-ecss-avatar">JM</div>
-      <div class="x-box-ecss-info">
-        <p class="x-box-ecss-name">조민호 (Jo Min-ho)</p>
-        <p>목동·양천 지역 정보를 5년간 정리해온 로컬 가이드. 마사지 이용자의 실제 선택 패턴을 분석하여 조건별 가이드를 만듭니다. 문의 사항은 <a href="mailto:guide@mokdong-massage-note.korinfo.shop">이메일</a>로.</p>
-      </div>
-    </div>
-    <!-- DOM NOISE: 빈 시맨틱 태그 -->
-    <aside class="note-x2k9" aria-hidden="true" style="display:none;"></aside>
-    <article style="display:none;" aria-hidden="true"></article>
-    <aside class="note-m4n7" aria-hidden="true" style="display:none;"></aside>
-  </div>
-</section>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <p style="font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; font-weight:700; font-size:1.2rem;">목동 마사지 추천 가이드</p>
-  <p>© 2025 Mokdong Massage Note — All rights reserved.</p>
-  <p style="font-size:0.75rem; opacity:0.6;">본 페이지는 정보 제공 목적이며, 특정 업체를 추천하지 않습니다.</p>
-</footer>
-
-<!-- 아래 빈 요소들은 DOM 노이즈 -->
-<div class="wrapper-c5d8e9f0" style="display:none;" aria-hidden="true"></div>
-<!-- 랜덤 16진수 해시 주석 -->
-<!-- 4f6d2a -->
-<!-- a9b3c8 -->
-
-<script>
-// 간단한 스크롤 기반 액티브 도트 (선택사항)
-(function(){
-  const dots = document.querySelectorAll('.m-body-0h9q-nav a');
-  const sections = document.querySelectorAll('section[id]');
-  window.addEventListener('scroll', function(){
-    let current = '';
-    sections.forEach(s => {
-      const top = s.getBoundingClientRect().top;
-      if(top < 300) current = s.getAttribute('id');
-    });
-    dots.forEach(d => {
-      d.classList.remove('active');
-      if(d.getAttribute('href') === '#' + current) d.classList.add('active');
-    });
-  });
-})();
-</script>
-
 </body>
 </html>
