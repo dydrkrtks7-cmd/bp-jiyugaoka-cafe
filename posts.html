@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · jiyugaoka-cafe</title>
+  <meta name="description" content="jiyugaoka-cafe에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://mokdong-massage-note.korinfo.shop/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* ============================================== */
+ /* CSS DNA: Swiss Minimal / Mono-Chrome Theme */
+ /* ============================================== */
+ :root {
+ --color-primary: #111111; /* 배경/주요 텍스트 */
+ --color-secondary: #ffffff; /* 기본 배경/콘텐츠 배경 */
+ --color-accent: #2563eb; /* 강조색 (파란색) */
+ --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ }
+
+ /* Base Reset & Typography */
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ html {
+ scroll-behavior: smooth;
+ }
+
+ body {
+ font-family: var(--font-family);
+ color: var(--color-primary);
+ background-color: var(--color-secondary);
+ line-height: 1.7;
+ }
+
+ /* Layout & Spacing (Dense) */
+ .container {
+ max-width: 960px; /* Container Width */
+ margin: 0 auto;
+ padding: 0 24px; /* Padding around the edges */
+ }
+
+ section {
+ padding: 40px 0; /* Section Gap (Vertical Padding) */
+ }
+
+ /* Headings */
+ h1, h2, h3 {
+ font-weight: 700; /* Bold/Edgy Voice */
+ line-height: 1.25;
+ margin-bottom: 16px; /* Spacing below headings */
+ color: var(--color-primary);
+ }
+
+ h1 { font-size: 3rem; }
+ h2 { font-size: 2rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px;}
+ h3 { font-size: 1.35rem; margin-top: 0; }
+
+ /* Navigation & Header */
+ header {
+ border-bottom: 2px solid var(--color-primary); /* Strong line division */
+ padding: 24px 0;
+ position: sticky;
+ top: 0;
+ background: var(--color-secondary);
+ z-index: 1000;
+ box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05); /* Subtle shadow */
+ }
+
+ nav .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo a {
+ font-size: 1.6rem;
+ font-weight: 900; /* Extra bold for impact */
+ text-decoration: none;
+ color: var(--color-primary);
+ }
+
+ .nav-links ul {
+ list-style: none;
+ display: flex;
+ gap: 24px; /* Space between links */
+ }
+
+ .nav-links a {
+ text-decoration: none;
+ color: var(--color-primary);
+ font-weight: 600;
+ transition: color 0.2s ease, border-bottom 0.2s ease;
+ padding-bottom: 4px;
+ }
+
+ /* Sticky Nav Hover Effect */
+ .nav-links a:hover {
+ color: var(--color-accent);
+ border-bottom: 1px solid var(--color-accent);
+ }
+
+ /* Hamburger Menu (Mobile) */
+ .hamburger {
+ display: none; /* Hidden by default on desktop */
+ font-size: 28px;
+ cursor: pointer;
+ line-height: 1;
+ }
+
+
+ /* ============================================== */
+ /* Hero Section Styling */
+ /* ============================================== */
+ #hero {
+ padding: 100px 0; /* Generous vertical padding for impact */
+ text-align: center;
+ border-bottom: 3px solid var(--color-accent); /* More prominent division */
+ }
+
+ .hero-content h1 {
+ font-size: 4rem;
+ margin-bottom: 12px;
+ }
+
+ .hero-content p {
+ font-size: 1.25rem;
+ max-width: 700px;
+ margin: 0 auto 32px auto;
+ color: #444444; /* Slightly softer text color */
+ }
+
+ /* CSS Image Replacement (Abstract Coffee Bean/Steam SVG) */
+ .hero-visual {
+ width: 150px;
+ height: 150px;
+ margin: 0 auto 32px auto;
+ background: radial-gradient(circle, #ccc 5%, var(--color-primary) 95%);
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ }
+
+ /* Simple SVG for visual flair inside the circle */
+ .hero-visual svg {
+ width: 70px;
+ height: 70px;
+ fill: #ffffff; /* White coffee bean color */
+ stroke: var(--color-accent);
+ stroke-width: 2;
+ }
+
+
+ /* ============================================== */
+ /* Grid & Cards (UGC Reviews) */
+ /* ============================================== */
+ .card-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive Grid - 3+ columns */
+ gap: 16px; /* Dense spacing requirement */
+ margin-top: 40px;
+ }
+
+ .review-card {
+ border: 1px solid #e0e0e0; /* Thin border */
+ padding: 24px;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ background-color: #f9f9f9;
+ }
+
+ /* Subtle Hover Transition */
+ .review-card:hover {
+ transform: translateY(-5px); /* Slight lift */
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Very subtle shadow increase */
+ }
+
+ .card-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 12px;
+ }
+
+ .nickname {
+ font-weight: 700;
+ color: var(--color-accent);
+ font-size: 1.1rem;
+ }
+
+ .date {
+ font-size: 0.85rem;
+ color: #777777;
+ }
+
+ .rating span {
+ font-size: 1.2rem;
+ margin-right: 4px;
+ /* ★ 대체 - SVG 또는 문자 사용 */
+ }
+ .rating .star-filled { color: gold; }
+
+
+ /* ============================================== */
+ /* Info & CTA Section */
+ /* ============================================== */
+ #info-cta {
+ text-align: center;
+ }
+
+ .info-grid {
+ display: flex;
+ justify-content: space-around;
+ gap: 32px;
+ margin-top: 32px;
+ padding: 24px;
+ border: 1px solid #e0e0e0; /* Border around info block */
+ }
+
+ .info-item {
+ flex: 1;
+ text-align: center;
+ padding: 16px;
+ /* Visual separation via border or whitespace, sticking to clean lines! */
+ }
+
+ .info-item h3 {
+ color: var(--color-accent);
+ margin-bottom: 8px;
+ }
+
+ .info-item p {
+ font-size: 1rem;
+ }
+
+ /* CTA Button (Provocative Tone) */
+ .cta-button {
+ display: inline-block;
+ background-color: var(--color-accent);
+ color: var(--color-secondary);
+ text-decoration: none;
+ padding: 14px 36px;
+ font-size: 1.1rem;
+ font-weight: 700;
+ margin-top: 24px;
+ border: 2px solid var(--color-accent);
+ transition: background-color 0.2s ease, color 0.2s ease;
+ }
+
+ /* CTA Hover Effect */
+ .cta-button:hover {
+ background-color: #1e5acb; /* Slightly darker blue for hover */
+ color: var(--color-secondary);
+ }
+
+
+ /* ============================================== */
+ /* Footer Styling */
+ /* ============================================== */
+ footer {
+ padding: 30px 0;
+ text-align: center;
+ border-top: 1px solid #e0e0e0; /* Clean separation from content */
+ font-size: 0.85rem;
+ color: #666666;
+ }
+
+ /* ============================================== */
+ /* Responsive Design (Mobile Optimization) */
+ /* ============================================== */
+ @media (max-width: 768px) {
+ /* Header/Nav adjustments */
+ .nav-links {
+ display: none; /* Hide links by default on mobile */
+ flex-direction: column;
+ position: absolute;
+ top: 100%; /* Right below the header bar */
+ left: 0;
+ right: 0;
+ background: var(--color-secondary);
+ border-top: 1px solid #e0e0e0;
+ padding: 24px;
+ }
+ .nav-links.active {
+ display: flex; /* Show when active */
+ }
+ .hamburger {
+ display: block; /* Show hamburger icon */
+ }
+
+ /* Hero adjustments */
+ .hero-content h1 {
+ font-size: 2.5rem;
+ }
+ .hero-content p {
+ font-size: 1.1rem;
+ }
+
+ /* Info Grid adjustment */
+ .info-grid {
+ flex-direction: column; /* Stack items vertically */
+ gap: 24px;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · jiyugaoka-cafe">
+  <meta property="og:description" content="jiyugaoka-cafe에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://mokdong-massage-note.korinfo.shop/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 34개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/compare-001-15g2mdk.html">Jiyugaoka cafe 안내 vs Jiyugaoka cafe 안내 비교</a>
+        <p class="post-item__summary">아, 진짜... 서비스업계에서 월 매출 3000 찍고도 6개월 만에 폐업한 진짜 원가 구조. 전직 업주로서의 내 눈물겨운 경험을 들려드리겠습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-001-cxml53.html">Jiyugaoka cafe 안내</a>
+        <p class="post-item__summary">지유가오카는 도쿄에서 유럽풍의 이국적인 정취를 느낄 수 있는 대표적인 지역으로 손꼽힙니다. 이곳은 아기자기한 골목마다 독특한 개성을 지닌 카페들이 밀집해 있어 평소 디저트와 커피를 즐기는 방문객들에</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0368.html">Jiyugaoka cafe 안내 정보와 마포/합정 인디 소셜 라운지 가이드 체크리스트</a>
+        <p class="post-item__summary">Jiyugaoka cafe 안내 정보를 찾는 이들에게 지역의 고유한 문화를 체험하는 것은 큰 즐거움입니다. 마포와 합정 지역 역시 자신만의 색깔을 가진 공간들이 많아 방문객들의 관심을 받고 있습니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0369.html">Jiyugaoka cafe 안내 동대문 풋쌤 마사지 예약 및 방문 팁</a>
+        <p class="post-item__summary">도심 한복판에서 업무를 마치고 피로를 풀기 위해 마사지 샵을 찾는 경우가 많습니다. 막연히 Jiyugaoka cafe 안내 문구를 보고 찾아가듯, 접근성이 좋은 샵을 선택하는 것은 쉽지 않은 일입니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0370.html">Jiyugaoka cafe 안내 지수 성장 클리닉과 탈모 방지 전략</a>
+        <p class="post-item__summary">많은 이들이 웹사이트 최적화와 외부 링크가 단순히 양적인 측면에서 결정된다고 믿는 것은 큰 오해입니다. 마치 Jiyugaoka cafe 안내 정보를 맹신하고 유명세만 보고 가게를 선택하는 것과 유사</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0371.html">Jiyugaoka cafe 안내 마포 홍대 로컬 럭셔리 밤문화 가이드</a>
+        <p class="post-item__summary">성공적인 밤문화를 위해서는 인원 구성과 장소 선정, 그리고 적절한 예산 수립이라는 세 가지 조건이 조화를 이루어야 합니다. 단순히 Jiyugaoka cafe 안내 글을 보고 목적지를 정하는 것과는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0372.html">Jiyugaoka cafe 안내 마포 코인노래방 방음 시설 비교 가이드</a>
+        <p class="post-item__summary">노래를 부르다 옆방의 소음이 들려 흐름이 깨진 경험을 누구나 한 번쯤 해보셨을 겁니다. 마치 Jiyugaoka cafe 안내 내용만 믿고 방문했다가 기대치에 미치지 못해 실망하는 것과 비슷합니다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0373.html">Jiyugaoka cafe 안내를 통한 해당 사이트 활용법</a>
+        <p class="post-item__summary">도쿄의 여유로운 분위기를 담은 Jiyugaoka cafe 안내 정보를 찾는 이들이라면 디지털 자산의 안정적인 운영에도 관심이 많을 것입니다. 검색 엔진의 평가 체계가 엄격해지면서 갑작스러운 순위 하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0374.html">Jiyugaoka cafe 안내와 비교하는 마포 유흥 투명 정찰제 가격 정보 디렉토리의 가치</a>
+        <p class="post-item__summary">여유로운 오후의 Jiyugaoka cafe 안내를 읽으며 공간의 가치를 판단하듯, 복잡한 유흥 시장에서도 정보의 정확성은 필수입니다. 대다수 이용자는 불투명한 가격 책정으로 인해 예상치 못한 비용을</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0375.html">Jiyugaoka cafe 안내를 참조한 마포 럭셔리 단체 가라오케 예약 가이드 실무</a>
+        <p class="post-item__summary">차분한 Jiyugaoka cafe 안내를 통해 공간 선택의 중요성을 익혔다면, 이제는 대규모 모임을 위한 장소 섭외로 시선을 돌려야 합니다. 많은 이들이 고급스러운 공간을 선호하지만, 정작 예약 과</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0376.html">Jiyugaoka cafe 안내와 함께하는 관련 정보 보기 활용</a>
+        <p class="post-item__summary">고즈넉한 Jiyugaoka cafe 안내가 주는 정갈함처럼, 웹사이트도 콘텐츠 급수 정화 과정을 거쳐야 비로소 순위를 올릴 수 있습니다. 사이트 내부가 불필요한 데이터로 가득 차 있다면 검색 엔진은</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0377.html">Jiyugaoka cafe 안내를 통한 마포 셔츠룸 예약 시 눈탱이 피하는 법</a>
+        <p class="post-item__summary">오후 시간대 마포의 번화가를 거닐다 보면 화려한 간판 뒤에 숨겨진 업소들의 유혹을 쉽게 마주하게 됩니다. 일본의 여유로운 감성을 담은 Jiyugaoka cafe 안내 책자를 읽으며 도심의 소음을 피</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0378.html">Jiyugaoka cafe 안내에 빗댄 구글 틈새 키워드 트래픽 외환 거래 전략</a>
+        <p class="post-item__summary">많은 투자자가 외환 거래는 하루 종일 모니터를 응시해야만 성공할 수 있다는 오해를 가지고 있습니다. 마치 Jiyugaoka cafe 안내 서적에서 강조하는 최적의 휴식 시간처럼, 투자 역시 전략적인</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0379.html">Jiyugaoka cafe 안내를 활용한 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호</a>
+        <p class="post-item__summary">웹사이트 운영자라면 누구나 구글 검색 엔진이 자신의 페이지를 더욱 자주 방문해주기를 갈망합니다. Jiyugaoka cafe 안내 문서를 정독하며 고객의 방문 경로를 분석하는 일처럼, 크롤러의 효율을</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0380.html">Jiyugaoka cafe 안내로 살펴보는 마포 홍대 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">많은 분이 마포 일대에서 모임을 가질 때 가장 고민하는 것이 장소 선정입니다. Jiyugaoka cafe 안내 책자를 보며 평온한 시간을 꿈꾸다가도, 밤이 되면 즐거운 회식을 위해 적당한 장소를 찾</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0381.html">Jiyugaoka cafe 안내 및 고신용 도메인 보증 카드 발급 절차</a>
+        <p class="post-item__summary">도쿄의 여유로운 분위기를 대표하는 Jiyugaoka cafe 안내 정보를 찾다 보면 웹 생태계의 신뢰 구축 문제와 마주하게 됩니다. 온라인 도메인의 신용도는 단순한 활동 기간이 아니라 검색 엔진의 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0382.html">Jiyugaoka cafe 안내 및 구글 인덱싱 속도 최적화 비교</a>
+        <p class="post-item__summary">차분한 오후의 Jiyugaoka cafe 안내 포스팅을 작성하면서 웹 페이지의 인덱싱 속도에 대해 다시금 생각하게 됩니다. 사용자가 콘텐츠를 검색했을 때 빠르게 결과가 나타나는 것은 사용자 경험의 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0383.html">Jiyugaoka cafe 안내와 구글 신뢰 지수 모발이식 솔루션</a>
+        <p class="post-item__summary">평화로운 Jiyugaoka cafe 안내 글을 읽으며 디지털 자산의 가치에 대해 깊이 고민해 봅니다. 웹사이트의 신뢰 지수는 마치 사람의 신체 건강처럼 보이지 않는 곳에서 꾸준히 관리되어야 합니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0121.html">Jiyugaoka cafe 안내 및 4</a>
+        <p class="post-item__summary">한적한 오후에 도심의 골목을 걷다 보면 마치 Jiyugaoka cafe 안내 문구가 붙은 아기자기한 상점가를 마주하는 듯한 설렘을 느낍니다. 하지만 막상 복잡한 자동화 기술을 도입하려 할 때 겪는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0122.html">Jiyugaoka cafe 안내와 마포 단체 회식용 대형 룸 노래방 가격 정보</a>
+        <p class="post-item__summary">흔히 대형 시설을 예약할 때 무조건 넓은 공간이면 만족할 것이라는 오해를 하곤 합니다. 마치 Jiyugaoka cafe 안내 글을 보고 방문했는데 분위기가 기대와 달라 당황하는 상황과 비슷합니다. </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
